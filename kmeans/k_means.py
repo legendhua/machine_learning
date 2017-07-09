@@ -1,4 +1,9 @@
-
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+'''
+2017-07-09
+kmeans algorithm
+'''
 import numpy as np
 from numpy import *
 import matplotlib.pyplot as plt
