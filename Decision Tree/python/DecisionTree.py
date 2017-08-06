@@ -68,9 +68,9 @@ def majorityCnt(classList):    #按分类后类别数量排序，比如：最后
 
 def createTree(dataSet,labels):
     classList=[example[-1] for example in dataSet]  # 类别：男或女
-    if classList.count(classList[0])==len(classList):
+    if classList.count(classList[0])==len(classList):  #只有一种类别的情况
         return classList[0]
-    if len(dataSet[0])==1:
+    if len(dataSet[0])==1:        #
         return majorityCnt(classList)
     bestFeat=chooseBestFeatureToSplit(dataSet) #选择最优特征
     bestFeatLabel=labels[bestFeat]
